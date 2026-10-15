@@ -1,0 +1,18 @@
+{
+  "name": "triwal-traviator",
+  "version": "1.1.0",
+  "private": true,
+  "description": "A responsive travel agency website with gated live travel, CRM and payment adapters.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check integrations/openai.js && node --check integrations/zoho-crm.js && node --check integrations/tbo-hotels.js && node --check integrations/tbo-flights.js && node --check integrations/razorpay.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.11.2"
+  }
+}

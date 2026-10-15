@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173a30">
+  <meta name="description" content="Explore 57 curated destinations across India with local highlights, signature foods, images and practical travel notes, then shape a personal itinerary with Triwal Traviator.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Triwal Traviator — travel a little deeper">
+  <meta property="og:description" content="Discover 57 Indian destinations with local highlights, food, images and thoughtful planning notes.">
+  <meta property="og:image" content="/assets/hero-destination.webp">
+  <title>Triwal Traviator — travel a little deeper</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=india-guide-5">
+  <script type="module" src="/app.js?v=india-guide-5"></script>
+</head>
+<body>
+  <div class="page-loader" id="page-loader" hidden aria-hidden="true">
+    <div class="loader-content" role="status" aria-live="polite">
+      <div class="loader-globe" aria-hidden="true"><span class="loader-globe-line"></span><span class="loader-globe-star">✳</span><span class="loader-orbit"></span></div>
+      <p class="loader-brand">TRIWAL <span>TRAVIATOR</span></p>
+      <p class="loader-message" id="loader-message">Getting the good details in place…</p>
+      <div class="loader-track" aria-hidden="true"><span></span></div>
+      <button class="loader-skip" type="button" id="skip-loader">Skip intro <span aria-hidden="true">↗</span></button>
+      <span class="loader-caption">A LITTLE LESS PLANNING. A LOT MORE POSSIBILITY.</span>
+    </div>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-fill"></span></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement-bar">
+    <span class="announcement-mark" aria-hidden="true">✳</span>
+    <span>Good trips begin with good questions.</span>
+    <a href="#how-it-works">Meet your travel people <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Triwal Traviator home">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="Compass and wing emblem">
+          <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="1.25"/>
+          <circle cx="24" cy="24" r="15.5" fill="none" stroke="currentColor" stroke-width=".8" opacity=".55"/>
+          <path d="M24 7.3 27.2 21l13.5 3-13.5 3L24 40.7 20.8 27 7.3 24l13.5-3L24 7.3Z" fill="currentColor"/>
+          <path d="M12 35.5c7.4-7 13.6-9.9 24-10.6-5.4 4.2-10.8 7.5-17.6 10.5l-6.4.1Z" fill="#173a30" stroke="currentColor" stroke-width="1.1"/>
+          <circle cx="24" cy="24" r="2.1" fill="#f5f1e8"/>
+        </svg>
+        <span class="brand-name"><strong>TRIWAL</strong><small>TRAVIATOR</small></span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#journeys">Journeys</a>
+        <a href="#india-guide">India guide</a>
+        <a href="#packages">Packages</a>
+        <a href="#how-it-works">Our way</a>
+        <a href="#studio">AI trip studio</a>
+        <a href="#faq">Good to know</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="button button-dark button-small nav-plan" type="button" data-open-inquiry>
+          Plan with us <span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="/assets/hero-destination.webp" alt="A quiet Amalfi Coast cove, seen from above, with turquoise water and a small wooden boat" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-3d-scene" id="hero-3d-scene" aria-hidden="true">
+        <span class="hero-orbit hero-orbit-one"></span><span class="hero-orbit hero-orbit-two"></span>
+        <span class="hero-orbit-dot hero-orbit-dot-one"></span><span class="hero-orbit-dot hero-orbit-dot-two"></span>
+        <div class="hero-suitcase">
+          <span class="suitcase-handle"></span>
+          <div class="suitcase-core">
+            <span class="case-face case-front"><span class="case-ridges"></span><span class="case-emblem">✳</span><span class="case-brand">TRIWAL<small>FIELD NOTES · 01</small></span></span>
+            <span class="case-face case-side"></span><span class="case-face case-top"></span>
+            <span class="case-face case-back"></span><span class="case-face case-left"></span>
+          </div>
+          <span class="suitcase-wheel suitcase-wheel-left"></span><span class="suitcase-wheel suitcase-wheel-right"></span>
+        </div>
+        <svg class="hero-plane" viewBox="0 0 120 80" focusable="false"><path d="M8 35 109 8 71 70 57 45 8 35Z" fill="#e2c58d"/><path d="m57 45 52-37-38 49-14-12Z" fill="#f6e4bf"/><path d="m57 45-6 22 20 3" fill="#bf9653"/><path d="m57 45-49-10 63 4" fill="#fff1cf"/></svg>
+        <span class="hero-model-note">THE LONG WAY, ALWAYS</span>
+      </div>
+      <div class="hero-inner page-width">
+        <div class="hero-copy" data-reveal="rise">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-dash"></span> MADE FOR THE WAY YOU WANDER</p>
+          <h1 id="hero-title">Go beyond<br>the <em>usual.</em></h1>
+          <p class="hero-lede">Thoughtful journeys, made personal. We bring the details together so you can be there for the moments that matter.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#studio">Build my itinerary <span class="button-arrow" aria-hidden="true">↗</span></a>
+            <a class="text-link text-link-light" href="#journeys">Find your somewhere <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-stars" aria-label="A little sparkle">✳ <span>✳</span> ✳</div>
+            <p><strong>Thoughtfully planned.</strong><br><span>Always, unmistakably yours.</span></p>
+          </div>
+        </div>
+
+        <aside class="hero-note" data-reveal="rise" aria-label="A featured journey">
+          <div class="hero-note-top"><span>THE ART OF TAKING IT SLOW</span><span class="note-index">No. 01</span></div>
+          <div class="hero-note-body">
+            <div class="hero-note-compass" aria-hidden="true">✳</div>
+            <div><strong>Somewhere by the sea</strong><span>One good view at a time</span></div>
+            <a href="#journeys" aria-label="Explore journeys by the sea">↗</a>
+          </div>
+        </aside>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span> SCROLL TO WANDER</div>
+    </section>
+
+    <section class="search-wrap page-width" aria-label="Quick journey search" data-reveal="rise">
+      <form class="search-panel" id="quick-search">
+        <div class="search-intro"><span class="search-icon" aria-hidden="true">⌕</span><div><strong>Where to next?</strong><small>A good place to begin.</small></div></div>
+        <label class="search-field" for="search-destination"><span class="field-label">I'M DREAMING OF</span>
+          <select id="search-destination" name="destination">
+            <option value="any">Anywhere, really</option>
+            <option value="india">Browse every India destination</option>
+            <option value="amalfi">Amalfi Coast, Italy</option>
+            <option value="kyoto">Kyoto, Japan</option>
+            <option value="bhutan">Bhutan</option>
+            <option value="rajasthan">Rajasthan, India</option>
+            <optgroup label="India · city and region guide">
+                <option value="india-srinagar">Srinagar &amp; Kashmir</option>
+                <option value="india-ladakh">Leh &amp; Ladakh</option>
+                <option value="india-delhi">Delhi</option>
+                <option value="india-agra">Agra</option>
+                <option value="india-amritsar">Amritsar</option>
+                <option value="india-varanasi">Varanasi</option>
+                <option value="india-rishikesh">Rishikesh &amp; Haridwar</option>
+                <option value="india-jaipur">Jaipur</option>
+                <option value="india-udaipur">Udaipur</option>
+                <option value="india-jaisalmer">Jaisalmer &amp; the Thar</option>
+                <option value="india-kutch">Kutch &amp; Bhuj</option>
+                <option value="india-mumbai">Mumbai</option>
+                <option value="india-goa">Goa</option>
+                <option value="india-munnar">Munnar &amp; the Kerala Hills</option>
+                <option value="india-hampi">Hampi</option>
+                <option value="india-mysuru">Mysuru</option>
+                <option value="india-chennai">Chennai &amp; Mahabalipuram</option>
+                <option value="india-hyderabad">Hyderabad</option>
+                <option value="india-kolkata">Kolkata</option>
+                <option value="india-konark">Puri &amp; Konark</option>
+                <option value="india-bhedaghat">Bhedaghat &amp; Jabalpur</option>
+                <option value="india-khajuraho">Khajuraho &amp; Orchha</option>
+                <option value="india-kanha">Kanha National Park</option>
+                <option value="india-meghalaya">Shillong &amp; Meghalaya</option>
+                <option value="india-kaziranga">Kaziranga &amp; Assam</option>
+                <option value="india-sikkim">Gangtok &amp; Sikkim</option>
+                <option value="india-tawang">Tawang</option>
+                <option value="india-andaman">Andaman Islands</option>
+                <option value="india-shimla">Shimla &amp; Himachal Pradesh</option>
+                <option value="india-nainital">Nainital &amp; Kumaon</option>
+                <option value="india-lucknow">Lucknow &amp; Awadh</option>
+                <option value="india-bodhgaya">Bodh Gaya &amp; Nalanda</option>
+                <option value="india-darjeeling">Darjeeling &amp; Kalimpong</option>
+                <option value="india-sundarbans">Sundarbans Delta</option>
+                <option value="india-ahmedabad">Ahmedabad, Patan &amp; Modhera</option>
+                <option value="india-gir">Gir National Park</option>
+                <option value="india-ajanta">Ajanta &amp; Ellora Caves</option>
+                <option value="india-chandigarh">Chandigarh</option>
+                <option value="india-bhopal">Bhopal, Sanchi &amp; Bhimbetka</option>
+                <option value="india-pachmarhi">Pachmarhi &amp; Satpura</option>
+                <option value="india-ranchi">Ranchi &amp; Netarhat</option>
+                <option value="india-bastar">Bastar &amp; Chitrakote Falls</option>
+                <option value="india-bengaluru">Bengaluru</option>
+                <option value="india-coorg">Coorg / Kodagu</option>
+                <option value="india-ooty">Ooty &amp; the Nilgiris</option>
+                <option value="india-madurai">Madurai &amp; Rameswaram</option>
+                <option value="india-kochi">Kochi &amp; Alappuzha</option>
+                <option value="india-puducherry">Puducherry</option>
+                <option value="india-visakhapatnam">Visakhapatnam &amp; Araku</option>
+                <option value="india-lakshadweep">Lakshadweep Islands</option>
+                <option value="india-ziro">Ziro Valley</option>
+                <option value="india-loktak">Imphal &amp; Loktak Lake</option>
+                <option value="india-kohima">Kohima &amp; Nagaland</option>
+                <option value="india-aizawl">Aizawl &amp; Mizoram</option>
+                <option value="india-unakoti">Agartala &amp; Unakoti</option>
+                <option value="india-kurukshetra">Kurukshetra</option>
+                <option value="india-daman-diu">Daman &amp; Diu</option>
+              </optgroup>
+          </select>
+        </label>
+        <label class="search-field search-date" for="search-date"><span class="field-label">WHEN FEELS RIGHT?</span>
+          <input id="search-date" name="date" type="date" aria-label="Preferred travel date">
+        </label>
+        <label class="search-field search-travelers" for="search-travelers"><span class="field-label">WHO'S COMING?</span>
+          <select id="search-travelers" name="travelers" aria-label="Number of travelers">
+            <option value="1">Just me</option><option value="2" selected>2 travelers</option><option value="3">3 travelers</option><option value="4">4 travelers</option><option value="5">5 travelers</option><option value="6">6+ travelers</option>
+          </select>
+        </label>
+        <button class="button button-dark search-submit" type="submit">Find my escape <span class="button-arrow" aria-hidden="true">↗</span></button>
+      </form>
+      <p class="search-status" id="search-status" aria-live="polite"></p>
+    </section>
+
+    <section class="section destinations-section" id="journeys" aria-labelledby="journeys-title">
+      <div class="page-width">
+        <div class="section-heading split-heading" data-reveal="rise">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dash"></span> A FEW PLACES TO BEGIN</p>
+            <h2 id="journeys-title">Somewhere you'll<br>still be <em>thinking about.</em></h2>
+          </div>
+          <div class="heading-aside"><p>For now, consider these an open invitation. Every journey is shaped around your pace, your people and the things you love.</p><a class="text-link" href="#studio">Make one your own <span aria-hidden="true">↗</span></a></div>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filter journeys by feeling" data-reveal="rise">
+          <span class="filter-label">A FEELING, PERHAPS</span>
+          <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All journeys</button>
+          <button class="filter-chip" type="button" data-filter="coast" aria-pressed="false">By the water</button>
+          <button class="filter-chip" type="button" data-filter="culture" aria-pressed="false">Culture & craft</button>
+          <button class="filter-chip" type="button" data-filter="nature" aria-pressed="false">Wild places</button>
+        </div>
+
+        <div class="destination-grid" id="destination-grid">
+          <article class="destination-card destination-amalfi" data-destination-card data-place="amalfi" data-tags="coast culture slow" data-reveal="rise">
+            <img src="/assets/hero-destination.webp" alt="Sunlit coastline and turquoise sea along Italy's Amalfi Coast" loading="lazy" decoding="async">
+            <div class="card-shade" aria-hidden="true"></div>
+            <div class="card-topline"><span class="card-tag">SLOW COASTAL LIVING</span><span class="card-number">01 / 04</span></div>
+            <div class="destination-content"><span class="destination-country">ITALY · 7–10 DAYS</span><h3>Amalfi,<br>unhurried.</h3><div class="card-bottom"><span>Sea air & long lunches</span><button type="button" class="card-arrow" data-plan-destination="amalfi" aria-label="Plan an Amalfi Coast journey">↗</button></div></div>
+          </article>
+
+          <article class="destination-card destination-kyoto" data-destination-card data-place="kyoto" data-tags="culture slow" data-reveal="rise">
+            <img src="/assets/kyoto.webp" alt="Traditional Kyoto lane framed by warm autumn leaves" loading="lazy" decoding="async">
+            <div class="card-shade" aria-hidden="true"></div>
+            <div class="card-topline"><span class="card-tag">A STUDY IN STILLNESS</span><span class="card-number">02 / 04</span></div>
+            <div class="destination-content"><span class="destination-country">JAPAN · 6–9 DAYS</span><h3>Kyoto,<br>in the in-between.</h3><div class="card-bottom"><span>Old lanes & new rituals</span><button type="button" class="card-arrow" data-plan-destination="kyoto" aria-label="Plan a Kyoto journey">↗</button></div></div>
+          </article>
+
+          <article class="destination-card destination-bhutan" data-destination-card data-place="bhutan" data-tags="nature culture" data-reveal="rise">
+            <img src="/assets/bhutan.webp" alt="Tiger's Nest monastery above a cloud-softened Bhutanese forest" loading="lazy" decoding="async">
+            <div class="card-shade" aria-hidden="true"></div>
+            <div class="card-topline"><span class="card-tag">HIGHER, QUIETER</span><span class="card-number">03 / 04</span></div>
+            <div class="destination-content"><span class="destination-country">BHUTAN · 8–12 DAYS</span><h3>Bhutan,<br>above the clouds.</h3><div class="card-bottom"><span>Mountain paths & meaning</span><button type="button" class="card-arrow" data-plan-destination="bhutan" aria-label="Plan a Bhutan journey">↗</button></div></div>
+          </article>
+
+          <article class="destination-card destination-rajasthan" data-destination-card data-place="rajasthan" data-tags="culture heritage" data-reveal="rise">
+            <img src="/assets/rajasthan.webp" alt="Carved sandstone arches glowing in the evening light in Rajasthan" loading="lazy" decoding="async">
+            <div class="card-shade" aria-hidden="true"></div>
+            <div class="card-topline"><span class="card-tag">COLOUR, WITH CHARACTER</span><span class="card-number">04 / 04</span></div>
+            <div class="destination-content"><span class="destination-country">INDIA · 6–9 DAYS</span><h3>Rajasthan,<br>in full colour.</h3><div class="card-bottom"><span>Havelis & desert skies</span><button type="button" class="card-arrow" data-plan-destination="rajasthan" aria-label="Plan a Rajasthan journey">↗</button></div></div>
+          </article>
+        </div>
+        <p class="empty-filter" id="empty-filter" hidden>No journeys in this collection just yet. Choose another feeling, or <a href="#studio">dream up your own.</a></p>
+        <div class="destination-footnote"><span class="mini-star" aria-hidden="true">✳</span> Every itinerary can be adapted. These places are a starting point, not a set menu.</div>
+      </div>
+    </section>
+
+    <section class="section india-guide-section" id="india-guide" aria-labelledby="india-guide-title">
+      <div class="page-width">
+        <div class="section-heading split-heading india-guide-heading" data-reveal="rise">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dash"></span> THE INDIA FIELD GUIDE · 57 PLACES TO START</p>
+            <h2 id="india-guide-title">India, in all<br>its <em>many moods.</em></h2>
+          </div>
+          <div class="heading-aside">
+            <p>From Himalayan valleys and old river cities to island shores, forest reserves and the wide middle of the map: discover what makes each place special.</p>
+            <a class="text-link" href="#studio">Turn a place into a trip <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="india-browser" data-reveal="rise">
+          <label class="india-search-box" for="india-search"><span aria-hidden="true">⌕</span><input id="india-search" type="search" placeholder="Search a city, landmark, food or feeling" autocomplete="off"><span class="sr-only">Search the India destination guide</span></label>
+          <label class="india-region-box" for="india-region-filter"><span>REGION</span><select id="india-region-filter"><option value="all">All India</option><option value="north">North India</option><option value="west">West India</option><option value="central">Central India</option><option value="south">South India</option><option value="east">East India</option><option value="northeast">Northeast India</option><option value="islands">Islands</option></select></label>
+        </div>
+        <div class="india-theme-row" role="group" aria-label="Filter India destinations by interest" data-reveal="rise">
+          <span class="filter-label">FOLLOW YOUR CURIOSITY</span>
+          <button class="india-theme-chip is-active" type="button" data-india-tag="all" aria-pressed="true">All places</button>
+          <button class="india-theme-chip" type="button" data-india-tag="culture" aria-pressed="false">Heritage &amp; culture</button>
+          <button class="india-theme-chip" type="button" data-india-tag="nature" aria-pressed="false">Nature</button>
+          <button class="india-theme-chip" type="button" data-india-tag="food" aria-pressed="false">Food</button>
+          <button class="india-theme-chip" type="button" data-india-tag="coast" aria-pressed="false">Coast &amp; islands</button>
+          <button class="india-theme-chip" type="button" data-india-tag="spiritual" aria-pressed="false">Spiritual places</button>
+          <button class="india-theme-chip" type="button" data-india-tag="wildlife" aria-pressed="false">Wildlife</button>
+        </div>
+        <p class="india-result-count" id="india-result-count" aria-live="polite">Loading 57 destination notes…</p>
+        <div class="india-grid" id="india-destination-grid" aria-label="India destinations"></div>
+        <p class="india-empty" id="india-empty" hidden>No India places match those filters. Try another search or <button type="button" id="clear-india-filters">show every place</button>.</p>
+        <noscript><p class="india-noscript">Enable JavaScript to search the destination guide and open each place’s travel notes.</p></noscript>
+        <p class="india-footnote"><span class="mini-star" aria-hidden="true">✳</span> A curated introduction to 57 places spanning all 28 states and 8 union territories, not every town or route. Some images are AI-generated photo-style illustrations; sourced photo credits and licenses appear in destination details. Access, seasons and local rules can change.</p>
+      </div>
+    </section>
+
+    <section class="section packages-section" id="packages" aria-labelledby="packages-title">
+      <div class="page-width">
+        <div class="section-heading packages-heading split-heading" data-reveal="rise">
+          <div><p class="eyebrow"><span class="eyebrow-dash"></span> A FEW GOOD WAYS TO GO</p><h2 id="packages-title">Eight journeys,<br>already <em>taking shape.</em></h2></div>
+          <div class="heading-aside"><p>Choose a considered starting point, then make it yours in the Trip Studio. These are flexible itinerary ideas, not fixed departures or live bookings.</p><span class="package-count"><span class="count-orbit" aria-hidden="true">✳</span> 08 CURATED STARTING POINTS</span></div>
+        </div>
+        <div class="package-browse" data-reveal="rise">
+          <div class="package-filter-pills" role="group" aria-label="Filter packages by travel feeling">
+            <button class="package-filter is-active" type="button" data-package-filter="all" aria-pressed="true">All ideas <span>08</span></button>
+            <button class="package-filter" type="button" data-package-filter="coast" aria-pressed="false">By the water</button>
+            <button class="package-filter" type="button" data-package-filter="culture" aria-pressed="false">Culture</button>
+            <button class="package-filter" type="button" data-package-filter="nature" aria-pressed="false">Nature</button>
+            <button class="package-filter" type="button" data-package-filter="food" aria-pressed="false">Food</button>
+            <button class="package-filter package-saved-filter" type="button" data-package-filter="saved" aria-pressed="false"><span aria-hidden="true">♡</span> Saved <span id="saved-package-count">0</span></button>
+          </div>
+          <div class="package-search-controls">
+            <label class="package-search-box" for="package-search"><span aria-hidden="true">⌕</span><input type="search" id="package-search" placeholder="Search places, moods, or routes" autocomplete="off"><span class="sr-only">Search itinerary packages</span></label>
+            <label class="package-destination-box" for="package-destination-filter"><span>DESTINATION</span><select id="package-destination-filter"><option value="all">Everywhere</option><option value="amalfi">Amalfi Coast</option><option value="kyoto">Kyoto</option><option value="bhutan">Bhutan</option><option value="rajasthan">Rajasthan</option></select></label>
+          </div>
+          <p class="package-filter-status" id="package-filter-status" aria-live="polite">Showing all 8 itinerary ideas.</p>
+        </div>
+        <div class="package-grid" id="package-grid">
+          <article class="package-card" data-reveal="rise" data-package-card data-package-id="amalfi-lemon-light" data-package-destination="amalfi" data-package-tags="coast food slow">
+            <div class="package-visual package-amalfi-one"><img src="/assets/hero-destination.webp" alt="" loading="lazy" decoding="async"><button class="package-visual-hitarea" type="button" data-package-details="amalfi-lemon-light" aria-label="View photos and full details for Lemon light &amp; long lunches"></button><button class="package-favorite" type="button" data-package-favorite="amalfi-lemon-light" aria-label="Save Lemon light & long lunches for later" aria-pressed="false"><span aria-hidden="true">♡</span></button><span class="package-visual-shade"></span><span class="package-label">SEA · FOOD · SLOW</span><span class="package-duration">07<small>DAYS</small></span><span class="package-token" aria-hidden="true">✳</span><span class="package-route">POSITANO <i></i> RAVELLO <i></i> AMALFI</span></div>
+            <div class="package-copy"><p class="package-kicker">ITALY · COASTAL ESCAPE</p><h3>Lemon light & long lunches</h3><p class="package-description">Cliffside paths, a ferry day and room for one excellent lunch to become three.</p><div class="package-meta"><span>Easy rhythm</span><span>Best in summer</span></div><button class="package-details-cta" type="button" data-package-details="amalfi-lemon-light"><span class="details-icon" aria-hidden="true">⌕</span> Full details & photos <span class="details-arrow" aria-hidden="true">↗</span></button><button class="package-cta" type="button" data-package-start="amalfi-lemon-light">Start with this idea <span>↗</span></button></div>
+          </article>
+          <article class="package-card" data-reveal="rise" data-package-card data-package-id="amalfi-ferry-days" data-package-destination="amalfi" data-package-tags="coast nature slow">
+            <div class="package-visual package-amalfi-two"><img src="/assets/hero-destination.webp" alt="" loading="lazy" decoding="async"><button class="package-visual-hitarea" type="button" data-package-details="amalfi-ferry-days" aria-label="View photos and full details for Ferries, footpaths &amp; sea glass"></button><button class="package-favorite" type="button" data-package-favorite="amalfi-ferry-days" aria-label="Save Ferries, footpaths & sea glass for later" aria-pressed="false"><span aria-hidden="true">♡</span></button><span class="package-visual-shade"></span><span class="package-label">FERRIES · FOOTPATHS · SEA</span><span class="package-duration">05<small>DAYS</small></span><span class="package-token" aria-hidden="true">✳</span><span class="package-route">AMALFI <i></i> ATRANI <i></i> CAPRI</span></div>
+            <div class="package-copy"><p class="package-kicker">ITALY · THE SLOW COAST</p><h3>Ferries, footpaths & sea glass</h3><p class="package-description">A lighter coastal loop with a village walk, salty afternoons and open evenings.</p><div class="package-meta"><span>Balanced rhythm</span><span>Any season</span></div><button class="package-details-cta" type="button" data-package-details="amalfi-ferry-days"><span class="details-icon" aria-hidden="true">⌕</span> Full details & photos <span class="details-arrow" aria-hidden="true">↗</span></button><button class="package-cta" type="button" data-package-start="amalfi-ferry-days">Start with this idea <span>↗</span></button></div>
+          </article>
+          <article class="package-card" data-reveal="rise" data-package-card data-package-id="kyoto-old-lanes" data-package-destination="kyoto" data-package-tags="culture slow">
+            <div class="package-visual package-kyoto-one"><img src="/assets/kyoto.webp" alt="" loading="lazy" decoding="async"><button class="package-visual-hitarea" type="button" data-package-details="kyoto-old-lanes" aria-label="View photos and full details for Old lanes, new rituals"></button><button class="package-favorite" type="button" data-package-favorite="kyoto-old-lanes" aria-label="Save Old lanes, new rituals for later" aria-pressed="false"><span aria-hidden="true">♡</span></button><span class="package-visual-shade"></span><span class="package-label">GARDENS · TEA · OLD LANES</span><span class="package-duration">06<small>DAYS</small></span><span class="package-token" aria-hidden="true">✳</span><span class="package-route">HIGASHIYAMA <i></i> GION <i></i> ARASHIYAMA</span></div>
+            <div class="package-copy"><p class="package-kicker">JAPAN · CULTURE & CRAFT</p><h3>Old lanes, new rituals</h3><p class="package-description">Temple mornings, a tea pause and time to follow the wooden lanes without a list.</p><div class="package-meta"><span>Gentle rhythm</span><span>Best in autumn</span></div><button class="package-details-cta" type="button" data-package-details="kyoto-old-lanes"><span class="details-icon" aria-hidden="true">⌕</span> Full details & photos <span class="details-arrow" aria-hidden="true">↗</span></button><button class="package-cta" type="button" data-package-start="kyoto-old-lanes">Start with this idea <span>↗</span></button></div>
+          </article>
+          <article class="package-card" data-reveal="rise" data-package-card data-package-id="kyoto-market-makers" data-package-destination="kyoto" data-package-tags="food culture">
+            <div class="package-visual package-kyoto-two"><img src="/assets/kyoto.webp" alt="" loading="lazy" decoding="async"><button class="package-visual-hitarea" type="button" data-package-details="kyoto-market-makers" aria-label="View photos and full details for Market mornings &amp; makers"></button><button class="package-favorite" type="button" data-package-favorite="kyoto-market-makers" aria-label="Save Market mornings & makers for later" aria-pressed="false"><span aria-hidden="true">♡</span></button><span class="package-visual-shade"></span><span class="package-label">MARKETS · MAKERS · MATCHA</span><span class="package-duration">08<small>DAYS</small></span><span class="package-token" aria-hidden="true">✳</span><span class="package-route">NISHIKI <i></i> UJI <i></i> KYOTO</span></div>
+            <div class="package-copy"><p class="package-kicker">JAPAN · FLAVOUR & FORM</p><h3>Market mornings & makers</h3><p class="package-description">A food-loving week of neighbourhood kitchens, small studios and slow afternoons.</p><div class="package-meta"><span>Full, not rushed</span><span>Spring or autumn</span></div><button class="package-details-cta" type="button" data-package-details="kyoto-market-makers"><span class="details-icon" aria-hidden="true">⌕</span> Full details & photos <span class="details-arrow" aria-hidden="true">↗</span></button><button class="package-cta" type="button" data-package-start="kyoto-market-makers">Start with this idea <span>↗</span></button></div>
+          </article>
+          <article class="package-card" data-reveal="rise" data-package-card data-package-id="bhutan-valleys" data-package-destination="bhutan" data-package-tags="nature culture">
+            <div class="package-visual package-bhutan-one"><img src="/assets/bhutan.webp" alt="" loading="lazy" decoding="async"><button class="package-visual-hitarea" type="button" data-package-details="bhutan-valleys" aria-label="View photos and full details for Valleys &amp; monasteries"></button><button class="package-favorite" type="button" data-package-favorite="bhutan-valleys" aria-label="Save Valleys & monasteries for later" aria-pressed="false"><span aria-hidden="true">♡</span></button><span class="package-visual-shade"></span><span class="package-label">VALLEYS · DZONGS · TEA</span><span class="package-duration">09<small>DAYS</small></span><span class="package-token" aria-hidden="true">✳</span><span class="package-route">PARO <i></i> THIMPHU <i></i> PUNAKHA</span></div>
+            <div class="package-copy"><p class="package-kicker">BHUTAN · MOUNTAIN CULTURE</p><h3>Valleys & monasteries</h3><p class="package-description">A gradual high-country journey pairing quiet trails with local stories and rest.</p><div class="package-meta"><span>Steady rhythm</span><span>Spring or autumn</span></div><button class="package-details-cta" type="button" data-package-details="bhutan-valleys"><span class="details-icon" aria-hidden="true">⌕</span> Full details & photos <span class="details-arrow" aria-hidden="true">↗</span></button><button class="package-cta" type="button" data-package-start="bhutan-valleys">Start with this idea <span>↗</span></button></div>
+          </article>
+          <article class="package-card" data-reveal="rise" data-package-card data-package-id="bhutan-pine-trails" data-package-destination="bhutan" data-package-tags="nature slow">
+            <div class="package-visual package-bhutan-two"><img src="/assets/bhutan.webp" alt="" loading="lazy" decoding="async"><button class="package-visual-hitarea" type="button" data-package-details="bhutan-pine-trails" aria-label="View photos and full details for Prayer flags &amp; pine trails"></button><button class="package-favorite" type="button" data-package-favorite="bhutan-pine-trails" aria-label="Save Prayer flags & pine trails for later" aria-pressed="false"><span aria-hidden="true">♡</span></button><span class="package-visual-shade"></span><span class="package-label">PINE TRAILS · PRAYER FLAGS</span><span class="package-duration">08<small>DAYS</small></span><span class="package-token" aria-hidden="true">✳</span><span class="package-route">PARO <i></i> TIGER'S NEST <i></i> PINE RIDGE</span></div>
+            <div class="package-copy"><p class="package-kicker">BHUTAN · THE QUIETER PATH</p><h3>Prayer flags & pine trails</h3><p class="package-description">A nature-first sketch with gentle hikes, valley viewpoints and roomy evenings.</p><div class="package-meta"><span>Easy rhythm</span><span>Autumn light</span></div><button class="package-details-cta" type="button" data-package-details="bhutan-pine-trails"><span class="details-icon" aria-hidden="true">⌕</span> Full details & photos <span class="details-arrow" aria-hidden="true">↗</span></button><button class="package-cta" type="button" data-package-start="bhutan-pine-trails">Start with this idea <span>↗</span></button></div>
+          </article>
+          <article class="package-card" data-reveal="rise" data-package-card data-package-id="rajasthan-forts" data-package-destination="rajasthan" data-package-tags="culture">
+            <div class="package-visual package-rajasthan-one"><img src="/assets/rajasthan.webp" alt="" loading="lazy" decoding="async"><button class="package-visual-hitarea" type="button" data-package-details="rajasthan-forts" aria-label="View photos and full details for Forts, havelis &amp; chai"></button><button class="package-favorite" type="button" data-package-favorite="rajasthan-forts" aria-label="Save Forts, havelis & chai for later" aria-pressed="false"><span aria-hidden="true">♡</span></button><span class="package-visual-shade"></span><span class="package-label">FORTS · HAVELIS · CHAI</span><span class="package-duration">07<small>DAYS</small></span><span class="package-token" aria-hidden="true">✳</span><span class="package-route">JAIPUR <i></i> JODHPUR <i></i> JAISALMER</span></div>
+            <div class="package-copy"><p class="package-kicker">INDIA · COLOUR & CRAFT</p><h3>Forts, havelis & chai</h3><p class="package-description">A culture-led route through courtyards, artisan lanes and soft desert evenings.</p><div class="package-meta"><span>Balanced rhythm</span><span>Best in winter</span></div><button class="package-details-cta" type="button" data-package-details="rajasthan-forts"><span class="details-icon" aria-hidden="true">⌕</span> Full details & photos <span class="details-arrow" aria-hidden="true">↗</span></button><button class="package-cta" type="button" data-package-start="rajasthan-forts">Start with this idea <span>↗</span></button></div>
+          </article>
+          <article class="package-card" data-reveal="rise" data-package-card data-package-id="rajasthan-desert-tables" data-package-destination="rajasthan" data-package-tags="food culture">
+            <div class="package-visual package-rajasthan-two"><img src="/assets/rajasthan.webp" alt="" loading="lazy" decoding="async"><button class="package-visual-hitarea" type="button" data-package-details="rajasthan-desert-tables" aria-label="View photos and full details for Desert nights &amp; royal tables"></button><button class="package-favorite" type="button" data-package-favorite="rajasthan-desert-tables" aria-label="Save Desert nights & royal tables for later" aria-pressed="false"><span aria-hidden="true">♡</span></button><span class="package-visual-shade"></span><span class="package-label">DESERT NIGHTS · ROYAL TABLES</span><span class="package-duration">09<small>DAYS</small></span><span class="package-token" aria-hidden="true">✳</span><span class="package-route">JODHPUR <i></i> THAR <i></i> UDAIPUR</span></div>
+            <div class="package-copy"><p class="package-kicker">INDIA · DESERT & TABLE</p><h3>Desert nights & royal tables</h3><p class="package-description">An unhurried food-and-heritage trip, from old-city breakfasts to open skies.</p><div class="package-meta"><span>Full rhythm</span><span>Winter months</span></div><button class="package-details-cta" type="button" data-package-details="rajasthan-desert-tables"><span class="details-icon" aria-hidden="true">⌕</span> Full details & photos <span class="details-arrow" aria-hidden="true">↗</span></button><button class="package-cta" type="button" data-package-start="rajasthan-desert-tables">Start with this idea <span>↗</span></button></div>
+          </article>
+        </div>
+        <p class="package-empty" id="package-empty" hidden>No journeys match those filters yet. Try another place or feeling, or <button type="button" id="clear-package-filters">show all packages</button>.</p>
+        <p class="packages-footnote" data-reveal="rise"><span aria-hidden="true">✳</span> Save favourites in this browser with the heart. All eight are starting points, not fixed packages or confirmed reservations.</p>
+      </div>
+    </section>
+
+    <section class="studio-section" id="studio" aria-labelledby="studio-title">
+      <div class="studio-orb-glow" aria-hidden="true"></div>
+      <div class="page-width studio-layout">
+        <div class="studio-intro" data-reveal="rise">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-dash"></span> THE TRIWAL TRAVEL STUDIO</p>
+          <h2 id="studio-title">A little less<br>planning. A lot more <em>possibility.</em></h2>
+          <p class="studio-description">Tell us what moves you. Our smart itinerary maker turns the first spark into a day-by-day starting point — with room for the serendipity that makes a trip yours.</p>
+          <div class="studio-promise"><span class="promise-icon" aria-hidden="true">✳</span><p><strong>Thoughtful by design</strong><br>Smart suggestions to start. Human care to make it real.</p></div>
+          <div class="globe-caption"><span class="globe-caption-line"></span><span>DRAG THE GLOBE TO WANDER</span></div>
+          <div class="globe-stage" id="globe-stage" role="button" tabindex="0" aria-label="Interactive three-dimensional globe. Drag or use arrow keys to rotate." aria-keyshortcuts="ArrowLeft ArrowRight">
+            <svg class="orbit-path" viewBox="0 0 420 320" aria-hidden="true"><ellipse cx="210" cy="160" rx="192" ry="81" transform="rotate(-23 210 160)"/><path d="M47 234 C126 180 250 174 359 100"/><circle cx="52" cy="231" r="4"/><circle cx="359" cy="100" r="4"/></svg>
+            <div class="globe" id="globe">
+              <svg class="globe-map" viewBox="0 0 260 260" aria-hidden="true">
+                <defs><clipPath id="globe-clip"><circle cx="130" cy="130" r="126"/></clipPath><radialGradient id="ocean" cx="32%" cy="26%"><stop offset="0" stop-color="#37695c"/><stop offset=".68" stop-color="#1b4a3d"/><stop offset="1" stop-color="#0e3028"/></radialGradient></defs>
+                <g clip-path="url(#globe-clip)">
+                  <circle cx="130" cy="130" r="126" fill="url(#ocean)"/>
+                  <g fill="#88a997" opacity=".78">
+                    <path d="m42 75 10-13 19-8 9 3 3 9 14 3 5 8-8 4-2 11-11 3-1 12-9 8-2 12-10 2-3-10-8-8-3-12-13-6-6-11-11-2-7-6 6-7Z"/>
+                    <path d="m87 117 13-8 15 4 5 7-7 10-1 17-7 12-1 15-9 19-8 6-5-10 2-13-5-9 3-13-4-12 4-11Z"/>
+                    <path d="m119 64 13-5 11 3 7-7 17 1 8 7 13 2 8 10-7 8-14-2-8 8-12-4-4 12-8 2-6-10-11-3-9-8-13-2-4-7Z"/>
+                    <path d="m143 112 12-9 13 1 6 8 11 2 1 11-9 6-3 14-11 12-9-3-2-11-11-7-2-10 7-6Z"/>
+                    <path d="m179 79 17-9 23 5 11 12-4 12-16 4-6 10-14-2-9-10-12-3-1-9Z"/>
+                    <path d="m202 116 17-3 16 11 7 16-7 13-13 2-11-11-13-2-7-11Z"/>
+                  </g>
+                  <g fill="none" stroke="#bed1bf" stroke-width=".65" opacity=".28">
+                    <ellipse cx="130" cy="130" rx="45" ry="126"/><ellipse cx="130" cy="130" rx="92" ry="126"/><path d="M5 130h250M16 82c72 24 156 24 228 0M16 178c72-24 156-24 228 0"/>
+                  </g>
+                  <path d="M152 95c19 14 34 30 45 53" fill="none" stroke="#d2ae6e" stroke-width="2" stroke-dasharray="3 6"/>
+                  <circle cx="151" cy="95" r="4" fill="#e0bb74"/><circle cx="197" cy="148" r="4" fill="#e0bb74"/>
+                </g>
+                <circle cx="130" cy="130" r="126" fill="none" stroke="#a6c1ad" stroke-opacity=".58" stroke-width="1"/>
+              </svg>
+              <span class="globe-shine" aria-hidden="true"></span>
+            </div>
+            <span class="globe-label globe-label-east">KYOTO · 35° N</span><span class="globe-label globe-label-west">YOUR NEXT STORY</span>
+          </div>
+        </div>
+
+        <div class="planner-panel" data-reveal="rise">
+          <div class="planner-panel-heading">
+            <div><span class="planner-kicker"><span class="sparkle" aria-hidden="true">✳</span> TRIWAL SMART TRIP STUDIO</span><h3>Let's sketch the feeling.</h3></div>
+            <span class="step-count">01 <i>/</i> 04</span>
+          </div>
+          <p class="selected-package" id="selected-package" hidden aria-live="polite"><span aria-hidden="true">✳</span><span id="selected-package-name"></span><button type="button" id="clear-package" aria-label="Remove selected package">×</button></p>
+          <form id="planner-form" class="planner-form">
+            <div class="form-grid form-grid-two">
+              <label class="form-control" for="trip-destination"><span>THE PLACE ON YOUR MIND</span>
+                <select id="trip-destination" name="destination" required>
+                  <option value="kyoto">Kyoto, Japan</option><option value="bhutan">Bhutan</option><option value="rajasthan">Rajasthan, India</option><option value="amalfi">Amalfi Coast, Italy</option>
+                  <optgroup label="India · city and region guide">
+                <option value="india-srinagar">Srinagar &amp; Kashmir</option>
+                <option value="india-ladakh">Leh &amp; Ladakh</option>
+                <option value="india-delhi">Delhi</option>
+                <option value="india-agra">Agra</option>
+                <option value="india-amritsar">Amritsar</option>
+                <option value="india-varanasi">Varanasi</option>
+                <option value="india-rishikesh">Rishikesh &amp; Haridwar</option>
+                <option value="india-jaipur">Jaipur</option>
+                <option value="india-udaipur">Udaipur</option>
+                <option value="india-jaisalmer">Jaisalmer &amp; the Thar</option>
+                <option value="india-kutch">Kutch &amp; Bhuj</option>
+                <option value="india-mumbai">Mumbai</option>
+                <option value="india-goa">Goa</option>
+                <option value="india-munnar">Munnar &amp; the Kerala Hills</option>
+                <option value="india-hampi">Hampi</option>
+                <option value="india-mysuru">Mysuru</option>
+                <option value="india-chennai">Chennai &amp; Mahabalipuram</option>
+                <option value="india-hyderabad">Hyderabad</option>
+                <option value="india-kolkata">Kolkata</option>
+                <option value="india-konark">Puri &amp; Konark</option>
+                <option value="india-bhedaghat">Bhedaghat &amp; Jabalpur</option>
+                <option value="india-khajuraho">Khajuraho &amp; Orchha</option>
+                <option value="india-kanha">Kanha National Park</option>
+                <option value="india-meghalaya">Shillong &amp; Meghalaya</option>
+                <option value="india-kaziranga">Kaziranga &amp; Assam</option>
+                <option value="india-sikkim">Gangtok &amp; Sikkim</option>
+                <option value="india-tawang">Tawang</option>
+                <option value="india-andaman">Andaman Islands</option>
+                <option value="india-shimla">Shimla &amp; Himachal Pradesh</option>
+                <option value="india-nainital">Nainital &amp; Kumaon</option>
+                <option value="india-lucknow">Lucknow &amp; Awadh</option>
+                <option value="india-bodhgaya">Bodh Gaya &amp; Nalanda</option>
+                <option value="india-darjeeling">Darjeeling &amp; Kalimpong</option>
+                <option value="india-sundarbans">Sundarbans Delta</option>
+                <option value="india-ahmedabad">Ahmedabad, Patan &amp; Modhera</option>
+                <option value="india-gir">Gir National Park</option>
+                <option value="india-ajanta">Ajanta &amp; Ellora Caves</option>
+                <option value="india-chandigarh">Chandigarh</option>
+                <option value="india-bhopal">Bhopal, Sanchi &amp; Bhimbetka</option>
+                <option value="india-pachmarhi">Pachmarhi &amp; Satpura</option>
+                <option value="india-ranchi">Ranchi &amp; Netarhat</option>
+                <option value="india-bastar">Bastar &amp; Chitrakote Falls</option>
+                <option value="india-bengaluru">Bengaluru</option>
+                <option value="india-coorg">Coorg / Kodagu</option>
+                <option value="india-ooty">Ooty &amp; the Nilgiris</option>
+                <option value="india-madurai">Madurai &amp; Rameswaram</option>
+                <option value="india-kochi">Kochi &amp; Alappuzha</option>
+                <option value="india-puducherry">Puducherry</option>
+                <option value="india-visakhapatnam">Visakhapatnam &amp; Araku</option>
+                <option value="india-lakshadweep">Lakshadweep Islands</option>
+                <option value="india-ziro">Ziro Valley</option>
+                <option value="india-loktak">Imphal &amp; Loktak Lake</option>
+                <option value="india-kohima">Kohima &amp; Nagaland</option>
+                <option value="india-aizawl">Aizawl &amp; Mizoram</option>
+                <option value="india-unakoti">Agartala &amp; Unakoti</option>
+                <option value="india-kurukshetra">Kurukshetra</option>
+                <option value="india-daman-diu">Daman &amp; Diu</option>
+              </optgroup>
+                </select>
+              </label>
+              <label class="form-control" for="trip-month"><span>WHEN ARE YOU THINKING?</span>
+                <select id="trip-month" name="month"><option value="anytime">I'm flexible</option><option value="spring">Spring (Mar–May)</option><option value="summer">Summer (Jun–Aug)</option><option value="autumn">Autumn (Sep–Nov)</option><option value="winter">Winter (Dec–Feb)</option></select>
+              </label>
+            </div>
+            <div class="duration-control">
+              <div class="control-heading"><label for="trip-days">HOW LONG CAN YOU GET AWAY?</label><output id="days-output" for="trip-days">5 days</output></div>
+              <input id="trip-days" name="days" type="range" min="3" max="12" value="5" step="1">
+              <div class="range-labels"><span>A long weekend</span><span>A proper escape</span></div>
+            </div>
+            <fieldset class="style-control"><legend>WHAT SOUNDS LIKE YOU?</legend>
+              <div class="style-options">
+                <label class="style-option"><input type="radio" name="style" value="culture" checked><span><i aria-hidden="true">⌂</i> Culture</span></label>
+                <label class="style-option"><input type="radio" name="style" value="nature"><span><i aria-hidden="true">✿</i> Outdoors</span></label>
+                <label class="style-option"><input type="radio" name="style" value="food"><span><i aria-hidden="true">◌</i> Good food</span></label>
+                <label class="style-option"><input type="radio" name="style" value="slow"><span><i aria-hidden="true">≈</i> Slow days</span></label>
+              </div>
+            </fieldset>
+            <div class="form-grid form-grid-two lower-fields">
+              <label class="form-control" for="trip-pace"><span>YOUR PACE</span><select id="trip-pace" name="pace"><option value="balanced">A little of everything</option><option value="easy">Room to breathe</option><option value="full">Make every day count</option></select></label>
+              <label class="form-control" for="trip-party"><span>TRAVELLING WITH</span><select id="trip-party" name="party"><option value="two">A favourite person</option><option value="solo">Just me</option><option value="family">Family</option><option value="friends">Good friends</option></select></label>
+            </div>
+            <button class="button button-dark button-wide planner-submit" type="submit"><span class="button-label">Dream up my days</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+            <p class="planner-privacy">If live AI is enabled, these preferences go to the configured provider; contact details stay separate.</p>
+          </form>
+          <div class="planner-loading" id="planner-loading" hidden aria-live="polite"><span class="loading-orbit" aria-hidden="true"></span><span>Gathering a few good ideas…</span></div>
+          <div class="planner-result" id="planner-result" hidden aria-live="polite">
+            <div class="result-topline"><span class="result-source" id="result-source">A FIRST DRAFT</span><button type="button" class="result-reset" id="edit-itinerary">Edit the feeling <span aria-hidden="true">↗</span></button></div>
+            <div class="result-heading"><div><p class="result-eyebrow" id="result-meta">A PERSONAL STARTING POINT</p><h4 id="result-title">Your journey, taking shape.</h4></div><span class="result-stamp" aria-hidden="true">TT<br>✳</span></div>
+            <p class="result-overview" id="result-overview"></p>
+            <div class="itinerary-days" id="itinerary-days"></div>
+            <div class="result-actions"><button type="button" class="button button-outline" id="save-itinerary">Save this draft <span aria-hidden="true">♡</span></button><button type="button" class="result-text-button" id="copy-itinerary">Copy & share <span aria-hidden="true">↗</span></button><button type="button" class="result-text-button" id="request-itinerary">Talk it through <span aria-hidden="true">↗</span></button></div>
+            <p class="planner-feedback" id="planner-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+      <div class="studio-bottom-note page-width"><span>✳</span> A clever first draft, never a substitute for a real conversation.</div>
+    </section>
+
+    <section class="section approach-section" id="how-it-works" aria-labelledby="approach-title">
+      <div class="page-width">
+        <div class="section-heading approach-heading" data-reveal="rise">
+          <p class="eyebrow"><span class="eyebrow-dash"></span> THE TRIWAL WAY</p>
+          <h2 id="approach-title">Good travel is in<br>the <em>things between.</em></h2>
+          <p class="approach-lede">A smooth arrival. A table you didn't know to ask for. Enough room in the day to get wonderfully lost. We think about all of it.</p>
+        </div>
+        <div class="approach-grid">
+          <article class="approach-card" data-reveal="rise"><div class="approach-card-top"><span class="approach-number">01</span><span class="approach-icon" aria-hidden="true">⌕</span></div><h3>Begin with a feeling.</h3><p>Tell us what you want more of — quiet, colour, a little altitude, the best thing on the menu. The destination is only the start.</p><span class="approach-card-rule"></span><span class="approach-caption">CURIOUS FIRST. CHECKLISTS LATER.</span></article>
+          <article class="approach-card" data-reveal="rise"><div class="approach-card-top"><span class="approach-number">02</span><span class="approach-icon" aria-hidden="true">✳</span></div><h3>Make the details feel easy.</h3><p>We shape the pace, stays and small discoveries around you — with thoughtful suggestions, not an overstuffed schedule.</p><span class="approach-card-rule"></span><span class="approach-caption">PERSONAL, NEVER OFF THE SHELF.</span></article>
+          <article class="approach-card" data-reveal="rise"><div class="approach-card-top"><span class="approach-number">03</span><span class="approach-icon" aria-hidden="true">↗</span></div><h3>Go with room to wander.</h3><p>Your plan is a trusted companion, not a timetable. A real trip designer helps bring the moving parts together before you go.</p><span class="approach-card-rule"></span><span class="approach-caption">WELL-PLANNED. WIDE OPEN.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="interlude-section" aria-labelledby="interlude-title">
+      <div class="interlude-image" role="img" aria-label="A quiet courtyard in Rajasthan at golden hour"><img src="/assets/rajasthan.webp" alt="" loading="lazy" decoding="async"><span class="interlude-image-caption">RAJASTHAN · INDIA</span></div>
+      <div class="interlude-copy" data-reveal="rise"><p class="eyebrow"><span class="eyebrow-dash"></span> ROOM FOR THE UNEXPECTED</p><h2 id="interlude-title">Not every good<br>moment makes<br>the <em>itinerary.</em></h2><p>The cup of chai that turned into an hour. The lane you took because it looked interesting. We plan the important things — then leave the day enough breathing room to surprise you.</p><a class="text-link" href="#studio">Start with a feeling <span aria-hidden="true">↗</span></a><div class="interlude-mark" aria-hidden="true">✳</div></div>
+    </section>
+
+    <section class="section values-section" id="stories" aria-labelledby="values-title">
+      <div class="page-width values-layout">
+        <div class="values-heading" data-reveal="rise"><p class="eyebrow"><span class="eyebrow-dash"></span> A PROMISE FROM US</p><h2 id="values-title">The best days<br>aren't <em>overplanned.</em></h2><p>Thoughtful where it counts. Flexible where it matters. That's our little philosophy for seeing more of the world — and feeling more of it, too.</p><a class="button button-light" href="#how-it-works">The way we work <span class="button-arrow" aria-hidden="true">↗</span></a></div>
+        <div class="values-list" data-reveal="rise">
+          <article class="value-item"><span class="value-index">A.</span><div><h3>Made around you</h3><p>Your pace, your priorities, your kind of place. No copy-paste itineraries.</p></div><span class="value-symbol" aria-hidden="true">↗</span></article>
+          <article class="value-item"><span class="value-index">B.</span><div><h3>Clear from the start</h3><p>Helpful, honest recommendations with the details explained before you commit.</p></div><span class="value-symbol" aria-hidden="true">↗</span></article>
+          <article class="value-item"><span class="value-index">C.</span><div><h3>Considered, not crowded</h3><p>Time to take the scenic route. Space for the place to surprise you.</p></div><span class="value-symbol" aria-hidden="true">↗</span></article>
+          <div class="values-footnote"><span class="mini-star" aria-hidden="true">✳</span> Our north star: you come home with a story, not just a camera roll.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section" id="faq" aria-labelledby="faq-title">
+      <div class="page-width faq-layout">
+        <div class="faq-intro" data-reveal="rise"><p class="eyebrow"><span class="eyebrow-dash"></span> BEFORE YOU WANDER</p><h2 id="faq-title">A few good<br><em>things to know.</em></h2><p>Still wondering how it all works? Start here. If your question has a passport, we'll happily talk it through.</p><button class="text-link faq-contact" type="button" data-open-inquiry>Ask us directly <span aria-hidden="true">↗</span></button></div>
+        <div class="faq-list" data-reveal="rise">
+          <details class="faq-item"><summary>Are the itinerary packages fixed departures?</summary><p>No. The destination journeys and package ideas are flexible starting points, not scheduled departures or confirmed reservations. A trip designer can shape the route, pace, stays and experiences around your dates and interests.</p></details>
+          <details class="faq-item"><summary>Can I use the itinerary maker without booking?</summary><p>Absolutely. The studio creates a starting-point itinerary you can save or copy from this device. If you'd like help turning it into a trip, send it to a travel designer using the “Talk it through” button.</p></details>
+          <details class="faq-item"><summary>Are the prices on this site final?</summary><p>No prices are quoted here. Any example pricing shown in a future proposal would be indicative until dates, availability, inclusions and the final itinerary are confirmed in writing.</p></details>
+          <details class="faq-item"><summary>Can you help with a trip that isn't listed?</summary><p>Of course. The places above are a few starting points. Share the place you have in mind — or just tell us the kind of experience you're after.</p></details>
+          <details class="faq-item"><summary>Does the AI planner book flights or hotels?</summary><p>No. It creates an itinerary idea only. It doesn't check live availability, make reservations or replace destination-specific advice from a travel professional.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta" aria-labelledby="closing-title">
+      <div class="closing-sun" aria-hidden="true"></div>
+      <div class="page-width closing-content" data-reveal="rise"><p class="eyebrow eyebrow-light"><span class="eyebrow-dash"></span> YOUR NEXT CHAPTER, SOMEWHERE</p><h2 id="closing-title">The world is waiting.<br><em>Let's meet it well.</em></h2><p>Start with a place, a feeling, or a half-formed idea. We'll take it from there.</p><div class="closing-actions"><a class="button button-gold" href="#studio">Dream up a journey <span class="button-arrow" aria-hidden="true">↗</span></a><button class="text-link text-link-light" type="button" data-open-inquiry>Or talk to a real person <span aria-hidden="true">↗</span></button></div></div>
+      <div class="closing-compass" aria-hidden="true">✳</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width footer-main">
+      <div class="footer-brand-block">
+        <a class="footer-lockup-link" href="#top" aria-label="Triwal Traviator home"><img class="footer-lockup" src="/assets/logo-lockup.png" alt="Triwal Traviator — travel a little deeper" loading="lazy"></a>
+        <p>Thoughtful journeys.<br>Room to feel the world.</p>
+        <a class="footer-download" href="/assets/triwal-traviator-logo-original.png" download>Download the logo <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="footer-links"><span class="footer-heading">FIND YOUR WAY</span><a href="#journeys">Journeys</a><a href="#packages">Itinerary packages</a><a href="#studio">AI trip studio</a><a href="#how-it-works">Our way</a><a href="#faq">FAQs</a></div>
+      <div class="footer-links"><span class="footer-heading">A LITTLE MORE</span><button type="button" data-open-inquiry>Talk to a trip designer</button><a href="#stories">Our promise</a><a href="#top">Back to the beginning ↑</a></div>
+      <div class="footer-note"><span class="footer-star" aria-hidden="true">✳</span><p>Take the long way.<br><em>It's usually the good one.</em></p><span class="footer-location">MADE FOR CURIOUS PEOPLE, EVERYWHERE.</span></div>
+    </div>
+    <div class="page-width footer-bottom"><span>© <span id="current-year">2026</span> Triwal Traviator. Made for the way you wander.</span><span class="footer-disclaimer">Itinerary ideas are illustrative; availability and travel arrangements require confirmation.</span><a href="#top" class="back-top" aria-label="Back to top">↑</a></div>
+  </footer>
+
+  <dialog class="package-dialog" id="package-dialog" aria-labelledby="package-dialog-title">
+    <div class="package-dialog-inner">
+      <button type="button" class="dialog-close package-dialog-close" id="package-dialog-close" aria-label="Close package details">×</button>
+      <header class="package-dialog-heading">
+        <p class="eyebrow"><span class="eyebrow-dash"></span><span id="package-dialog-kicker">A TRIWAL STARTING POINT</span></p>
+        <h2 id="package-dialog-title">A journey taking shape.</h2>
+        <p class="package-dialog-summary" id="package-dialog-summary"></p>
+      </header>
+      <div class="package-dialog-gallery">
+        <figure class="package-gallery-main"><img id="package-image-main" alt="" loading="lazy" decoding="async"><button class="gallery-nav gallery-prev" type="button" id="package-gallery-prev" aria-label="Show previous package photo">‹</button><button class="gallery-nav gallery-next" type="button" id="package-gallery-next" aria-label="Show next package photo">›</button><span class="gallery-count" id="package-gallery-count" aria-live="polite">01 / 02</span><figcaption id="package-image-caption">A few scenes from the route</figcaption></figure>
+        <div class="package-gallery-side">
+          <figure><img id="package-image-second" alt="" loading="lazy" decoding="async"><button class="package-gallery-select" type="button" id="package-gallery-select" aria-label="Show this photo as the main image"><span>View this photo</span></button><figcaption id="package-image-second-caption">A little more to imagine</figcaption></figure>
+          <div class="package-mini-map">
+            <span class="mini-map-kicker">THE SUGGESTED ROUTE</span>
+            <svg viewBox="0 0 280 100" role="img" aria-label="Illustrated route between suggested stops"><path d="M18 70 C62 11 95 93 139 45 S211 14 261 61" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 6"/><circle cx="18" cy="70" r="5"/><circle cx="82" cy="47" r="4"/><circle cx="139" cy="45" r="5"/><circle cx="203" cy="33" r="4"/><circle cx="261" cy="61" r="5"/><path d="M18 70 C62 11 95 93 139 45 S211 14 261 61" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="9" opacity=".24"/></svg>
+            <p id="package-dialog-route"></p>
+          </div>
+        </div>
+      </div>
+      <div class="package-facts" id="package-facts" aria-label="Package details"></div>
+      <div class="package-detail-layout">
+        <section class="package-day-section" aria-labelledby="package-day-title">
+          <p class="package-dialog-section-kicker">A FLEXIBLE DAY-BY-DAY SKETCH</p>
+          <h3 id="package-day-title">How the days could unfold</h3>
+          <p class="package-detail-note">Use this as a conversation starter. The final order and activities should be adapted to your dates and confirmed locally.</p>
+          <div class="package-day-list" id="package-day-list"></div>
+        </section>
+        <aside class="package-detail-aside">
+          <section class="package-detail-box"><p class="package-dialog-section-kicker">THE HIGHLIGHTS</p><h3>Little moments to look forward to</h3><ul id="package-highlights"></ul></section>
+          <section class="package-detail-box package-notes-box"><p class="package-dialog-section-kicker">GOOD TO KNOW</p><h3>Before you go</h3><ul id="package-planning-notes"></ul></section>
+        </aside>
+      </div>
+      <div class="package-inclusion-grid">
+        <article class="package-inclusion"><span class="inclusion-mark" aria-hidden="true">✓</span><div><h3>What this idea includes</h3><p>A suggested route, day-by-day inspiration, a travel rhythm, and a starting point for a tailor-made proposal.</p></div></article>
+        <article class="package-inclusion inclusion-open"><span class="inclusion-mark" aria-hidden="true">↗</span><div><h3>What still needs arranging</h3><p>Prices, availability, stays, transport, reservations, guides, and any permits or entry requirements are confirmed separately for your dates.</p></div></article>
+      </div>
+      <footer class="package-dialog-footer"><p>Illustrative itinerary only. No price, reservation, or live availability is implied.</p><button class="button button-dark" type="button" id="package-build-button">Personalize this route <span class="button-arrow" aria-hidden="true">↗</span></button></footer>
+    </div>
+  </dialog>
+
+  <dialog class="india-place-dialog" id="india-place-dialog" aria-labelledby="india-place-title" aria-describedby="india-place-about">
+    <div class="india-dialog-inner">
+      <button type="button" class="dialog-close india-dialog-close" id="india-dialog-close" aria-label="Close India destination details">×</button>
+      <figure class="india-dialog-hero">
+        <img id="india-place-image" src="/assets/india/srinagar.jpg" alt="" loading="lazy" decoding="async">
+        <span class="india-dialog-image-shade" aria-hidden="true"></span>
+        <figcaption><span class="india-dialog-kicker" id="india-place-kicker">NORTH INDIA · JAMMU &amp; KASHMIR</span><h2 id="india-place-title">Srinagar &amp; Kashmir</h2><p id="india-place-tagline">Houseboats, gardens &amp; mountain light</p></figcaption>
+        <a class="india-image-source" id="india-image-source" target="_blank" rel="noopener noreferrer" hidden>Photo source ↗</a>
+        <span class="india-image-type" id="india-image-type">AI-generated photo-style illustration</span>
+      </figure>
+      <div class="india-dialog-content">
+        <p class="india-image-credit" id="india-image-credit" hidden></p>
+        <p class="india-place-about" id="india-place-about"></p>
+        <dl class="india-facts" id="india-place-facts"></dl>
+        <div class="india-details-grid">
+          <section class="india-detail-panel india-highlights-panel">
+            <p class="package-dialog-section-kicker">THE PLACE, UP CLOSE</p><h3>What to see &amp; do</h3>
+            <ul id="india-place-highlights"></ul>
+          </section>
+          <section class="india-detail-panel">
+            <p class="package-dialog-section-kicker">A TASTE OF HERE</p><h3>Local flavours to look for</h3>
+            <ul id="india-place-foods"></ul>
+          </section>
+        </div>
+        <div class="india-route-notes">
+          <section><p class="package-dialog-section-kicker">A POSSIBLE STARTING ROUTE</p><p id="india-place-route"></p></section>
+          <section class="india-good-to-know"><p class="package-dialog-section-kicker">BEFORE YOU GO</p><p id="india-place-note"></p></section>
+        </div>
+        <footer class="india-dialog-footer"><p>Interested in this place? Use it as your starting point and shape the dates, pace and stops in the Trip Studio.</p><button class="button button-dark" type="button" id="india-place-plan">Build an itinerary <span class="button-arrow" aria-hidden="true">↗</span></button></footer>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="inquiry-dialog" id="inquiry-dialog" aria-labelledby="inquiry-title">
+    <div class="dialog-inner">
+      <button type="button" class="dialog-close" id="dialog-close" aria-label="Close enquiry form">×</button>
+      <p class="eyebrow"><span class="eyebrow-dash"></span> A REAL PERSON, A GOOD PLACE TO START</p>
+      <h2 id="inquiry-title">Tell us what<br>you're <em>imagining.</em></h2>
+      <p class="dialog-intro">Share a few details and we'll help turn the first idea into a considered plan.</p>
+      <form id="contact-form" class="contact-form">
+        <div class="form-grid form-grid-two">
+          <label class="form-control" for="contact-name"><span>YOUR NAME</span><input id="contact-name" name="name" autocomplete="name" maxlength="100" placeholder="How should we address you?" required></label>
+          <label class="form-control" for="contact-email"><span>EMAIL ADDRESS</span><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="160" placeholder="you@example.com" required></label>
+        </div>
+        <div class="form-grid form-grid-two">
+          <label class="form-control" for="contact-destination"><span>WHERE ARE YOU THINKING?</span><input id="contact-destination" name="destination" maxlength="120" placeholder="A place, or just a feeling"></label>
+          <label class="form-control" for="contact-date"><span>ROUGH TRAVEL TIMING</span><input id="contact-date" name="travelDate" type="text" maxlength="80" placeholder="e.g. October, dates flexible"></label>
+        </div>
+        <label class="form-control" for="contact-message"><span>ANYTHING ELSE WE SHOULD KNOW?</span><textarea id="contact-message" name="notes" rows="3" maxlength="1200" placeholder="The people, pace, or little details that matter to you…"></textarea></label>
+        <label class="honeypot" aria-hidden="true" for="contact-website">Leave this blank<input id="contact-website" name="website" tabindex="-1" autocomplete="off"></label>
+        <button class="button button-dark button-wide" type="submit"><span class="contact-submit-label">Send my note</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+        <p class="contact-feedback" id="contact-feedback" aria-live="polite">Only send contact details you are comfortable sharing; please do not include payment or passport information.</p>
+      </form>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><div class="noscript-note">Triwal Traviator looks best with JavaScript enabled. You can still browse the journeys and FAQs above.</div></noscript>
+</body>
+</html>

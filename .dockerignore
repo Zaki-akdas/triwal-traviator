@@ -1,0 +1,12 @@
+node_modules/
+.git/
+.env
+.env.*
+!.env.example
+storage/*
+!storage/README.md
+coverage/
+dist/
+target/
+.DS_Store
+npm-debug.log*

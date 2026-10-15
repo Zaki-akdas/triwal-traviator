@@ -1,0 +1,1 @@
+This folder is outside `public/` and is used only for local preview enquiries when no CRM webhook is configured. Enquiry data is personal data; delete `inquiries.jsonl` when no longer needed. Production mode refuses local-disk enquiry storage.
