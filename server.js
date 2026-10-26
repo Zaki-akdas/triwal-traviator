@@ -526,7 +526,7 @@ async function serveStatic(request, response, pathname) {
   response.writeHead(200, {
     'Content-Type': MIME_TYPES[extension] || 'application/octet-stream',
     'Content-Length': info.size,
-    'Cache-Control': extension === '.html' ? 'no-cache' : 'public, max-age=3600',
+    'Cache-Control': extension === '.html' ? 'no-cache' : extension === '.css' ? 'no-cache' : 'public, max-age=3600',
     'Last-Modified': info.mtime.toUTCString()
   });
   if (request.method === 'HEAD') return response.end();

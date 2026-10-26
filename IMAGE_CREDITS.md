@@ -51,6 +51,23 @@ Local copies are included under the [Unsplash License](https://unsplash.com/lice
 | Kohima & Nagaland | https://unsplash.com/photos/a-city-with-lots-of-houses-on-a-hill-K6Tn786CyMo |
 | Aizawl & Mizoram | https://unsplash.com/photos/dense-cityscape-on-a-hazy-hillside-64jOjS8z3cU |
 
+## Package journey photographs
+
+The eight itinerary cards under “Packages”, and the photo gallery inside each package’s details dialog, use one locally stored Wikimedia Commons photograph per package plus the site’s own destination artwork. Each Commons photo is labelled in the dialog with its author and licence, and links to its source file page; images are cropped responsively in cards and in the gallery.
+
+| Package | Photograph / author | Licence | Source page |
+| --- | --- | --- | --- |
+| Lemon light & long lunches | Positano (Italy) 02 — Bernard Gagnon | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Positano_(Italy)_02.jpg) |
+| Ferries, footpaths & sea glass | Atrani (Italy) — Bernard Gagnon | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Atrani_(Italy).jpg) |
+| Old lanes, new rituals | Yasaka-dori early morning with street lanterns and the Tower of Yasaka — Basile Morin | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_(Hokan-ji_Temple),_Kyoto,_Japan.jpg) |
+| Market mornings & makers | Nishiki Market, Kyoto — Sergiy Galyonkin | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Nishiki_Market,_Kyoto_-_Flickr_-_Sergiy_Galyonkin.jpg) |
+| Valleys & monasteries | Punakha Dzong, Bhutan 02 — Bernard Gagnon | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Punakha_Dzong,_Bhutan_02.jpg) |
+| Prayer flags & pine trails | Paro Valley Landscape — Prashant91655 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Paro_Valley_Landscape.jpg) |
+| Forts, havelis & chai | Mehrangarh Fort 2, Jodhpur — Yann | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Mehrangarh_Fort_2,_Jodhpur,_Rajasthan,_India.jpg) |
+| Desert nights & royal tables | Lake Pichola at sunset, Udaipur — UnpetitproleX | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Lake_Pichola_at_sunset,_Udaipur,_Rajasthan,_India.jpg) |
+
+Package photos are stored under `public/assets/packages/` and re-sized for the web. For CC BY-SA works, retain attribution, provide the licence link, and preserve the applicable share-alike terms for adaptations.
+
 ## Local files
 
 All guide images are stored under `public/assets/india/`. Destination records and the image-source / credit data are in `public/india-destinations.js`; the dialog uses those fields to label AI-generated artwork and surface Commons attribution and license links.

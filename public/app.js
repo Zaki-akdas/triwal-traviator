@@ -602,11 +602,32 @@ const itineraryPackages = {
   }
 };
 
+const commonsCredit = (author, license, page) => ({ author, license, page });
 const packageGallery = {
-  amalfi: { first: '/assets/hero-destination.webp', second: '/assets/gallery-amalfi.jpg', firstAlt: 'Amalfi Coast cove viewed from above', secondAlt: 'Amalfi village and Mediterranean coastline in warm morning light' },
-  kyoto: { first: '/assets/kyoto.webp', second: '/assets/gallery-kyoto.jpg', firstAlt: 'A traditional Kyoto lane framed by autumn leaves', secondAlt: 'Quiet wooden lane in Kyoto with temple roof and lantern light' },
-  bhutan: { first: '/assets/bhutan.webp', second: '/assets/gallery-bhutan.jpg', firstAlt: 'Tiger’s Nest monastery above a Bhutanese forest', secondAlt: 'Bhutanese mountain valley, pine forest, and a cliffside monastery' },
-  rajasthan: { first: '/assets/rajasthan.webp', second: '/assets/gallery-rajasthan.jpg', firstAlt: 'Carved sandstone architecture in Rajasthan', secondAlt: 'Golden light falling through a carved sandstone haveli courtyard' }
+  amalfi: [
+    { src: '/assets/packages/amalfi-lemon-light.jpg', alt: 'Positano’s pastel houses stacked above the sea on Italy’s Amalfi Coast', credit: commonsCredit('Bernard Gagnon', 'CC BY 4.0', 'https://commons.wikimedia.org/wiki/File:Positano_(Italy)_02.jpg') },
+    { src: '/assets/hero-destination.webp', alt: 'Amalfi Coast cove viewed from above' },
+    { src: '/assets/gallery-amalfi.jpg', alt: 'Amalfi village and Mediterranean coastline in warm morning light' },
+    { src: '/assets/packages/amalfi-ferry-days.jpg', alt: 'The small village of Atrani on the Amalfi Coast seen from the water', credit: commonsCredit('Bernard Gagnon', 'CC BY 4.0', 'https://commons.wikimedia.org/wiki/File:Atrani_(Italy).jpg') }
+  ],
+  kyoto: [
+    { src: '/assets/packages/kyoto-old-lanes.jpg', alt: 'An early-morning Kyoto street lined with lanterns below the Yasaka pagoda', credit: commonsCredit('Basile Morin', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_(Hokan-ji_Temple),_Kyoto,_Japan.jpg') },
+    { src: '/assets/kyoto.webp', alt: 'A traditional Kyoto lane framed by autumn leaves' },
+    { src: '/assets/gallery-kyoto.jpg', alt: 'Quiet wooden lane in Kyoto with temple roof and lantern light' },
+    { src: '/assets/packages/kyoto-market-makers.jpg', alt: 'A covered market lane of food stalls in Kyoto’s Nishiki Market', credit: commonsCredit('Sergiy Galyonkin', 'CC BY-SA 2.0', 'https://commons.wikimedia.org/wiki/File:Nishiki_Market,_Kyoto_-_Flickr_-_Sergiy_Galyonkin.jpg') }
+  ],
+  bhutan: [
+    { src: '/assets/packages/bhutan-valleys.jpg', alt: 'Punakha Dzong monastery standing between two rivers in Bhutan', credit: commonsCredit('Bernard Gagnon', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Punakha_Dzong,_Bhutan_02.jpg') },
+    { src: '/assets/bhutan.webp', alt: 'Tiger’s Nest monastery above a Bhutanese forest' },
+    { src: '/assets/gallery-bhutan.jpg', alt: 'Bhutanese mountain valley, pine forest, and a cliffside monastery' },
+    { src: '/assets/packages/bhutan-pine-trails.jpg', alt: 'The green Paro valley in Bhutan framed by forested ridges', credit: commonsCredit('Prashant91655', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Paro_Valley_Landscape.jpg') }
+  ],
+  rajasthan: [
+    { src: '/assets/packages/rajasthan-forts.jpg', alt: 'Mehrangarh Fort rising above the blue houses of Jodhpur, Rajasthan', credit: commonsCredit('Yann', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Mehrangarh_Fort_2,_Jodhpur,_Rajasthan,_India.jpg') },
+    { src: '/assets/rajasthan.webp', alt: 'Carved sandstone architecture in Rajasthan' },
+    { src: '/assets/gallery-rajasthan.jpg', alt: 'Golden light falling through a carved sandstone haveli courtyard' },
+    { src: '/assets/packages/rajasthan-desert-tables.jpg', alt: 'Lake Pichola and the Udaipur city palace at sunset, Rajasthan', credit: commonsCredit('UnpetitproleX', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Lake_Pichola_at_sunset,_Udaipur,_Rajasthan,_India.jpg') }
+  ]
 };
 
 const savedPackagesStorageKey = 'triwal-traviator-saved-packages';
@@ -854,12 +875,17 @@ let openPackageId = '';
 let openPackageGallery = null;
 let openPackagePlace = '';
 let openPackageGalleryIndex = 0;
+function fillPackageCredit(target, photo) {
+  if (!target) return;
+  if (!photo.credit) { target.hidden = true; target.removeAttribute('href'); target.textContent = ''; return; }
+  target.hidden = false;
+  target.href = photo.credit.page;
+  target.textContent = `Photo: ${photo.credit.author} · ${photo.credit.license}`;
+  target.setAttribute('aria-label', `Photo by ${photo.credit.author}, ${photo.credit.license}. Opens the source page in a new tab.`);
+}
 function setPackageGalleryIndex(index) {
-  if (!openPackageGallery) return;
-  const photos = [
-    { src: openPackageGallery.first, alt: openPackageGallery.firstAlt },
-    { src: openPackageGallery.second, alt: openPackageGallery.secondAlt }
-  ];
+  if (!openPackageGallery?.length) return;
+  const photos = openPackageGallery;
   openPackageGalleryIndex = (index + photos.length) % photos.length;
   const mainPhoto = photos[openPackageGalleryIndex];
   const alternatePhoto = photos[(openPackageGalleryIndex + 1) % photos.length];
@@ -871,8 +897,10 @@ function setPackageGalleryIndex(index) {
   alternateImage.alt = alternatePhoto.alt;
   $('#package-image-caption').textContent = `${openPackagePlace} · ${mainPhoto.alt}`;
   $('#package-image-second-caption').textContent = `${openPackagePlace} · ${alternatePhoto.alt}`;
-  $('#package-gallery-count').textContent = `${String(openPackageGalleryIndex + 1).padStart(2, '0')} / 02`;
+  $('#package-gallery-count').textContent = `${String(openPackageGalleryIndex + 1).padStart(2, '0')} / ${String(photos.length).padStart(2, '0')}`;
   $('#package-gallery-select').setAttribute('aria-label', `Show this photo as the main ${openPackagePlace} image`);
+  fillPackageCredit($('#package-image-credit'), mainPhoto);
+  fillPackageCredit($('#package-image-second-credit'), alternatePhoto);
 }
 function fillPackageList(target, items) {
   if (!target) return;
@@ -887,15 +915,18 @@ function openPackageDetails(packageId) {
   if (!item || !packageDialog) return;
   const place = placeDetails[item.destination] || placeDetails.kyoto;
   const gallery = packageGallery[item.destination];
-  if (!gallery) return;
+  if (!gallery?.length) return;
   openPackageId = packageId;
   openPackageGallery = gallery;
   openPackagePlace = place.name;
+  const cardImageSrc = $(`[data-package-id="${packageId}"] img`)?.getAttribute('src');
+  const ownIndex = gallery.findIndex((photo) => photo.src === cardImageSrc);
+  openPackageGalleryIndex = ownIndex >= 0 ? ownIndex : 0;
   $('#package-dialog-kicker').textContent = `${place.country} · ${item.days} DAYS · ${item.style.toUpperCase()}-LED`;
   $('#package-dialog-title').textContent = item.title;
   $('#package-dialog-summary').textContent = item.summary;
   $('#package-dialog-route').textContent = item.route;
-  setPackageGalleryIndex(0);
+  setPackageGalleryIndex(openPackageGalleryIndex);
   const facts = [
     ['Duration', `${item.days} days`],
     ['Travel style', ({ culture: 'Culture & craft', nature: 'Nature-led', food: 'Food-focused', slow: 'Slow travel' })[item.style] || item.style],
