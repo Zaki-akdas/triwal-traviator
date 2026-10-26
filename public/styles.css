@@ -1028,6 +1028,8 @@ body.is-loading { overflow: hidden; }
   .package-cta { font-size: 12px; }
   .india-card-state { font-size: 10px; letter-spacing: .1em; }
   .form-control > span, .style-control legend, .control-heading label { font-size: 11px; letter-spacing: .1em; }
+  /* Three India cards across this range squeeze them to ~106px at 390px; two columns keeps the copy readable. */
+  .india-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px; }
 }
 @media (max-width: 520px) {
   /* Phone widths: single-column cards so the copy has room to breathe. */
@@ -1040,6 +1042,11 @@ body.is-loading { overflow: hidden; }
   .destination-grid { grid-template-columns: minmax(0,1fr); gap: 12px; }
   .destination-card { min-height: 300px; }
   .form-grid-two { grid-template-columns: minmax(0,1fr); }
+  .india-grid { grid-template-columns: minmax(0,1fr); gap: 13px; }
+  .india-card-visual { aspect-ratio: 1.7; }
+  .india-card-copy { padding: 14px 13px 13px; }
+  .india-card-copy h3 { font-size: 22px; }
+  .india-card-tagline { min-height: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
